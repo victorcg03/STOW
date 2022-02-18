@@ -21,6 +21,8 @@ html{
 
 }
 
+
+
 header{
 
     font-size: 0.7em;
@@ -35,15 +37,6 @@ header{
     background: rgba(0, 0, 0, 0.753) ;
     color: #fff;
     height: 50px;
-
-}
-
-#fondo{
-
-    background-image: url('../img/fondo.jpg');
-    height: 50vh;
-    background-size:cover;
-    background-position:center;
 
 }
 
@@ -142,31 +135,25 @@ header > div{
 
 }
 
-h2{
+#tit{
 
+    margin-top: 25px;
     width: 100%;
     text-align: center;
-    color: crimson;
-    margin-top: 60px;
-    text-decoration: underline;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
 
 }
+
 
 #productosgrid{
-
+    padding: 2vw;
     justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 100px;
     width: 100%;
     display: grid;
-    grid-template-columns: 15vw 15vw 15vw 15vw;
-    grid-template-rows: 22vw;
-    gap: 1vw;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 0.8fr));
 
 }
-
 .producto{
 
     background-image: url(../img/sudadera2.jpg);
@@ -186,7 +173,7 @@ h2{
 
 .info{
 
-    font-size: 0.9vw;
+    font-size: 1em;
     background-color: #272020cc;
     color: #fff;
     width: 100%;    
@@ -230,64 +217,9 @@ h2{
 
 }
 
-#oferta{
 
-    display: flex;
-    height:50vh;
-    background-image: url(../img/oferta.jpg);
-    background-size:cover;
-    background-position:top;
-    margin-bottom: 150px;
-    font-size: 3vw;
-    font-weight: 900;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-
-}
-
-#oferta span{
-
-    color: red;
-
-}
-
-footer{
-
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    height: 5vh;
-
-}
-
-footer div{
-
-    display: flex;
-    align-items: center;
-    width: 95%;
-    border-top: 1px solid #000;
-
-}
 
 @media (max-width:1450px){
-
-    #productosgrid{
-
-   
-
-
-        grid-template-columns: 40vw 40vw;
-        grid-template-rows: 50vw 50vw;
-    
-    
-    }
-
-    .info{
-
-            font-size: 1.3em;
-    
-    }
 
     header{
 
@@ -313,7 +245,11 @@ footer div{
 
     }
 
-   
+    .info{
+
+        font-size: 1.3em;
+
+    }
 }
 
 @media (max-width:750px){
@@ -343,18 +279,9 @@ footer div{
         display: none;
 
     }
-
-    #productosgrid{
-        
-        grid-template-columns: 80vw;
-        grid-template-rows: 60vw 60vw 60vw 60vw;
-    
-    }
-
     .info{
 
         font-size: 1em;
 
     }
-
 }
