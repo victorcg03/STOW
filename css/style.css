@@ -296,6 +296,22 @@ footer div{
 
     }
 
+    #productosgrid{
+
+   
+
+
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 50vw 50vw;
+    
+    
+    }
+
+    .info{
+
+            font-size: 1.3em;
+    
+    }
    
 }
 
