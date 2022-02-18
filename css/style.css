@@ -1,0 +1,298 @@
+*{
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+a{
+
+    color: #fff;
+    text-decoration: none;
+
+}
+
+html{
+
+    scroll-behavior: smooth;
+    width: 100vw;
+
+}
+
+header{
+
+    font-size: 0.7em;
+    display: grid;
+    grid-template-columns: 10% 35% 10% 31% 7% 3% 3%;
+    grid-template-areas: 
+    
+                            "menuu vacio1 stow vacio2 login lupa carro"
+    
+    ;
+
+    background: rgba(0, 0, 0, 0.753) ;
+    color: #fff;
+    height: 50px;
+
+}
+
+#fondo{
+
+    background-image: url('../img/fondo.jpg');
+    height: 50vh;
+    background-size:cover;
+    background-position:center;
+
+}
+
+.icono{
+
+    width: 30px;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+
+}
+
+#menu{
+
+    grid-area: menuu;
+    justify-content: center;
+
+}
+
+#menu img{
+
+    width: 25px;
+
+}
+
+#menu img:hover{
+
+    box-shadow: 5px 2px black;
+
+}
+
+
+#stow{
+
+    grid-area: stow;
+
+}
+
+#login{
+ 
+    grid-area: login;
+    font-size: 1.2rem;
+    width: 100%; height: 100%;
+    display: grid;
+
+    grid-template-columns: 35% 50%;
+
+}
+
+#login div{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+#login:hover{
+
+    background: rgba(209, 107, 107, 0.842) ;
+
+}
+
+#lupa{
+
+        grid-area: lupa;
+        justify-content: center;
+        width: 100%; height: 100%;
+
+}
+
+#lupa:hover{
+
+    background: rgba(209, 107, 107, 0.842) ;
+
+}
+
+#carro{
+
+    grid-area: carro;
+    justify-content: center;
+
+
+}
+
+#carro:hover{
+
+    background: rgba(209, 107, 107, 0.842) ;
+
+}
+
+
+header > div{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h2{
+
+    width: 100%;
+    text-align: center;
+    color: crimson;
+    margin-top: 60px;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+
+}
+
+#productosgrid{
+
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw 15vw;
+    grid-template-rows: 22vw;
+    gap: 1vw;
+
+}
+
+.producto{
+
+    background-image: url(../img/sudadera2.jpg);
+    background-size:cover;
+    background-position:center;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.producto:hover{
+
+    border: 2px solid #000;
+
+}
+
+.info{
+
+    background-color: #272020cc;
+    color: #fff;
+    width: 100%;    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    grid-template-areas: 
+    
+                        "nombre precio"
+                        "familia like"
+
+    ;
+}
+
+.nombreproducto{
+
+    grid-area: nombre;
+    font-weight: 700;
+
+}
+
+.precioproducto{
+
+    grid-area: precio;
+    width: 100%;
+    text-align: right;
+    font-weight: bolder;
+
+
+}
+
+.familiaproducto{
+
+    grid-area: familia;
+    font-weight: 300;
+    color: gray;
+
+}
+
+#oferta{
+
+    display: flex;
+    height:50vh;
+    background-image: url(../img/oferta.jpg);
+    background-size:cover;
+    background-position:top;
+    margin-bottom: 150px;
+    font-size: 3vw;
+    font-weight: 900;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#oferta span{
+
+    color: red;
+
+}
+
+footer{
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 5vh;
+
+}
+
+footer div{
+
+    display: flex;
+    align-items: center;
+    width: 95%;
+    border-top: 1px solid #000;
+
+}
+
+@media (max-width:700px){
+
+    #lupa{
+
+        display: none;
+
+    }
+
+    #login{
+
+        display: none;
+
+    }
+
+    #productosgrid{
+
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 80vw;
+        grid-template-rows: 60vw 60vw 60vw 60vw;
+        gap: 1vw;
+    
+    }
+
+}
